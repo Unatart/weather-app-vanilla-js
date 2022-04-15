@@ -1,0 +1,59 @@
+.main {
+    display: grid;
+    grid-area: content;
+    position: relative;
+    width: 500pt;
+    height: 200pt;
+    background-color: transparent;
+    border: 1px solid transparent;
+    z-index: 2;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: blur(2pt);
+    -webkit-filter: blur(2pt);
+    overflow: hidden;
+}
+
+.temperature {
+    position: absolute;
+    display: inline;
+    color: aliceblue;
+    font-family: monospace;
+    font-size: 60pt;
+    z-index: 3;
+    top: 60%;
+    left: 10%;
+    margin: -35px 0 0 -35px;
+    background: transparent;
+    -webkit-text-stroke: 2pt rgba(0,0,0,.15);
+}
+
+.status {
+    position: absolute;
+    display: inline;
+    color: aliceblue;
+    font-family: monospace;
+    font-size: 20pt;
+    z-index: 3;
+    bottom: 10%;
+    left: 5%;
+    background: transparent;
+    -webkit-text-stroke: 2pt rgba(0,0,0,.15);
+}
+
+.greeting {
+    position: absolute;
+    display: inline;
+    color: aliceblue;
+    font-family: monospace;
+    font-size: 20pt;
+    z-index: 3;
+    top: 10%;
+    left: 5%;
+    background: transparent;
+    -webkit-text-stroke: 2pt rgba(0,0,0,.15);
+}

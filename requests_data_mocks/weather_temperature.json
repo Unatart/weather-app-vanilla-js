@@ -1,0 +1,39 @@
+{
+  "result": [
+    {
+      "status": "sunny",
+      "celsius": 30,
+      "fahrenheit": 86
+    },
+    {
+      "status": "dull",
+      "celsius": 10,
+      "fahrenheit": 50
+    },
+    {
+      "status": "rainy",
+      "celsius": 5,
+      "fahrenheit": 41
+    },
+    {
+      "status": "storm",
+      "celsius": 1,
+      "fahrenheit": 33
+    },
+    {
+      "status": "cloudy",
+      "celsius": 17,
+      "fahrenheit": 63
+    },
+    {
+      "status": "fair",
+      "celsius": 23,
+      "fahrenheit": 73
+    },
+    {
+      "status": "snow",
+      "celsius": -18,
+      "fahrenheit": -0
+    }
+  ]
+}

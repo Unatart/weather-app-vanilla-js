@@ -1,0 +1,28 @@
+*, html {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0a1426;
+    display: grid;
+    grid-template-columns: 50pt 1fr 1fr 1fr 50pt;
+    grid-template-rows: 100pt repeat(2, 1fr) 200pt;
+    grid-template-areas:
+    "header header header header header"
+    ". content . . ."
+    ". . . . ."
+    "footer footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    width: 100%;
+    border-bottom: 1px solid rgba(240, 248, 255, 0.7);
+    z-index: 5;
+}
+
+
+
