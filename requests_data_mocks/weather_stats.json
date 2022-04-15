@@ -1,0 +1,68 @@
+{
+  "result": [
+    {
+      "status": "sunny",
+      "wind": 0.2,
+      "direction": "south",
+      "sunset": "10 p.m.",
+      "dawn": "4 a.m.",
+      "fallout_probability": 0,
+      "tomorrow": "sunny, no wind"
+    },
+    {
+      "status": "dull",
+      "wind": 3,
+      "direction": "west",
+      "sunset": "10-40 p.m.",
+      "dawn": "4 a.m.",
+      "fallout_probability": 10,
+      "tomorrow": "rainy, no wind"
+    },
+    {
+      "status": "rainy",
+      "wind": 7,
+      "direction": "west",
+      "sunset": "10 p.m.",
+      "dawn": "4-30 a.m.",
+      "fallout_probability": 100,
+      "fallout_time": "3h",
+      "tomorrow": "sunny, light wind"
+    },
+    {
+      "status": "storm",
+      "wind": 10,
+      "direction": "north",
+      "sunset": "9 p.m.",
+      "dawn": "7 a.m.",
+      "fallout_probability": 80,
+      "tomorrow": "rainy, strong wind"
+    },
+    {
+      "status": "cloudy",
+      "wind": 1,
+      "direction": "south",
+      "sunset": "10 p.m.",
+      "dawn": "5 a.m.",
+      "rain_probability": 30,
+      "tomorrow": "sunny, light wind"
+    },
+    {
+      "status": "fair",
+      "wind": 0.2,
+      "direction": "west",
+      "sunset": "11 p.m.",
+      "dawn": "5 a.m.",
+      "fallout_probability": 0,
+      "tomorrow": "cloudy, no wind"
+    },
+    {
+      "status": "snow",
+      "wind": 2,
+      "direction": "north",
+      "sunset": "8 p.m.",
+      "dawn": "6 a.m.",
+      "fallout_probability": 0,
+      "tomorrow": "sunny, no wind, no snow"
+    }
+  ]
+}

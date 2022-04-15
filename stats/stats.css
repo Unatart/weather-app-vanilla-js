@@ -1,0 +1,9 @@
+.stats {
+    grid-area: stats;
+    color: var(--light-font-color);
+    font-family: monospace;
+    padding-left: 15pt;
+    font-size: 20pt;
+    text-align: justify-all;
+    text-justify: newspaper;
+}

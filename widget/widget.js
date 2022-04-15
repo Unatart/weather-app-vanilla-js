@@ -1,23 +1,10 @@
-const WEATHER_RECORD = {
-    0: "sunny",
-    1: "dull",
-    2: "rain",
-    3: "storm",
-    4: "cloudy",
-    5: "fair"
-};
-
-function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min)) + min;
-}
+import {WEATHER_RECORD} from "../main/helpers.js";
 
 async function loadWeatherData() {
     const [urls, temperature] = await Promise.all([
-        fetch("./requests_data_mocks/weather_img.json")
+        fetch("../requests_data_mocks/weather_img.json")
         .then((response) => response.json()).then((data) => data.result),
-        fetch("./requests_data_mocks/weather_temperature.json")
+        fetch("../requests_data_mocks/weather_temperature.json")
         .then((response) => response.json()).then((data) => data.result)
     ]);
 
@@ -31,7 +18,7 @@ async function loadWeatherData() {
         }
     }
 
-    return [weather_map, urls.length - 1];
+    return weather_map;
 }
 
 function createMain() {
@@ -73,10 +60,8 @@ function createGreeting() {
     return greeting;
 }
 
-export async function createWeatherWidget(root_id) {
-    const [weather_map, weather_map_length] = await loadWeatherData();
-
-    const current_weather_type = getRandomInt(0, weather_map_length);
+export async function createWeatherWidget(root, current_weather_type) {
+    const weather_map = await loadWeatherData();
     const current_weather = weather_map[WEATHER_RECORD[current_weather_type]];
 
     const widget = createMain();
@@ -89,5 +74,6 @@ export async function createWeatherWidget(root_id) {
     widget.appendChild(temperature);
     widget.appendChild(status);
     widget.appendChild(greeting);
-    root_id.appendChild(widget);
+
+    root.appendChild(widget);
 }
