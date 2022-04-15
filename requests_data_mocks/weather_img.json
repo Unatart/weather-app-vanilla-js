@@ -1,0 +1,28 @@
+{
+  "weather": [
+    {
+      "status": "sunny",
+      "url": "https://www.weather2travel.com/images_content/sunshine-hours-where-and-when-is-it-sunniest.jpg"
+    },
+    {
+      "status": "dull",
+      "url": "http://www.nasa.gov/sites/default/files/thumbnails/image/smap-weather.jpg"
+    },
+    {
+      "status": "rain",
+      "url": "https://s7d2.scene7.com/is/image/TWCNews/heavy_rain_jpg-11"
+    },
+    {
+      "status": "storm",
+      "url": "https://i.ytimg.com/vi/qzEn8JkYCZs/maxresdefault.jpg"
+    },
+    {
+      "status": "cloudy",
+      "url": "https://media.istockphoto.com/photos/thunderstorm-with-sunrays-shining-through-altocumulus-asperitas-over-picture-id1152985678?k=20&m=1152985678&s=612x612&w=0&h=YhY8ILC67qkNHhwQQN9tpHgiWldaMZ_1ovyMwoE57jU="
+    },
+    {
+      "status": "fair",
+      "url": "https://uploads.ceylontoday.lk/images/2020/08/cLG76RjpysJvfC71v9aFCQtpUWn4ouFO.jpg"
+    }
+  ]
+}

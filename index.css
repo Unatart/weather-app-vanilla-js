@@ -1,0 +1,34 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+.main {
+    width: 500pt;
+    height: 200pt;
+    background-color: transparent;
+    color: #00143d;
+    border: 1px solid transparent;
+    border-radius: 25pt;
+    box-shadow: 5pt 5pt rgba(0,0,0,.15);
+    z-index: 2;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    overflow: hidden;
+    border-radius: 22pt;
+}
+
+.main:hover, .image:hover {
+    width: 600pt;
+    height: 270pt;
+    box-shadow: 7pt 7pt rgba(0,0,0,.15);
+    transition: all 0.2s ease-in-out;
+}
+
