@@ -1,5 +1,5 @@
-import {createWeatherWidget} from "./widget/widget.js";
-import {createHeader} from "./header/header.js";
+import {createWeatherWidget} from "../widget/widget.js";
+import {createHeader} from "../header/header.js";
 
 function main() {
     const root_id = document.getElementById("app");
