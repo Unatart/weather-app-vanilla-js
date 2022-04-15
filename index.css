@@ -1,34 +1,28 @@
 *, html {
     margin: 0;
     padding: 0;
-    background-color: aliceblue;
 }
 
-.main {
-    width: 500pt;
-    height: 200pt;
-    background-color: transparent;
-    color: #00143d;
-    border: 1px solid transparent;
-    border-radius: 25pt;
-    box-shadow: 5pt 5pt rgba(0,0,0,.15);
-    z-index: 2;
+.app {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0a1426;
+    display: grid;
+    grid-template-columns: 50pt 1fr 1fr 1fr 50pt;
+    grid-template-rows: 100pt repeat(2, 1fr) 200pt;
+    grid-template-areas:
+    "header header header header header"
+    ". content . . ."
+    ". . . . ."
+    "footer footer footer footer footer";
 }
 
-.image {
+.header {
+    grid-area: header;
     width: 100%;
-    height: 100%;
-    background-size: cover;
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
-    overflow: hidden;
-    border-radius: 22pt;
+    border-bottom: 1px solid rgba(240, 248, 255, 0.7);
+    z-index: 5;
 }
 
-.main:hover, .image:hover {
-    width: 600pt;
-    height: 270pt;
-    box-shadow: 7pt 7pt rgba(0,0,0,.15);
-    transition: all 0.2s ease-in-out;
-}
+
 

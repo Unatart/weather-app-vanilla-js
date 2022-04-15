@@ -1,5 +1,5 @@
 {
-  "weather": [
+  "result": [
     {
       "status": "sunny",
       "url": "https://www.weather2travel.com/images_content/sunshine-hours-where-and-when-is-it-sunniest.jpg"
@@ -9,7 +9,7 @@
       "url": "http://www.nasa.gov/sites/default/files/thumbnails/image/smap-weather.jpg"
     },
     {
-      "status": "rain",
+      "status": "rainy",
       "url": "https://s7d2.scene7.com/is/image/TWCNews/heavy_rain_jpg-11"
     },
     {
@@ -23,6 +23,10 @@
     {
       "status": "fair",
       "url": "https://uploads.ceylontoday.lk/images/2020/08/cLG76RjpysJvfC71v9aFCQtpUWn4ouFO.jpg"
+    },
+    {
+      "status": "snow",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Ymir_Mountain.jpg"
     }
   ]
 }
