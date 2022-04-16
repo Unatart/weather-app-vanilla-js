@@ -1,0 +1,32 @@
+{
+  "result": [
+    {
+      "status": "sunny",
+      "advice": "take sunglasses and don't forget about sunscreen!"
+    },
+    {
+      "status": "dull",
+      "advice": "take umbrella and scarf, it's cool outside"
+    },
+    {
+      "status": "rainy",
+      "advice": "don't forgot an umbrella!"
+    },
+    {
+      "status": "storm",
+      "advice": "stay home, it's unsafe outside"
+    },
+    {
+      "status": "cloudy",
+      "advice": "take an umbrella in case of rain"
+    },
+    {
+      "status": "fair",
+      "advice": "a good day for a walk!"
+    },
+    {
+      "status": "snow",
+      "advice": "dress warmly!"
+    }
+  ]
+}

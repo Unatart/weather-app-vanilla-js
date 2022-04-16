@@ -2,58 +2,104 @@
     display: grid;
     grid-area: content;
     position: relative;
-    width: 500pt;
-    height: 200pt;
     background-color: transparent;
-    border: 1px solid transparent;
-    z-index: 2;
 }
 
 .image {
+    background-size: cover;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    filter: blur(2pt);
-    -webkit-filter: blur(2pt);
-    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, var(--background-color) 100%);
+    width: 100%;
+    height: 100%;
 }
 
 .temperature {
     position: absolute;
-    display: inline;
-    color: aliceblue;
-    font-family: monospace;
-    font-size: 60pt;
-    z-index: 3;
-    top: 60%;
-    left: 10%;
-    margin: -35px 0 0 -35px;
+    color: var(--font-color);
+    font-size: 4vmax;
+    top: 80%;
+    left: 5%;
     background: transparent;
-    -webkit-text-stroke: 2pt rgba(0,0,0,.15);
+}
+
+.main_temperature {
+    display: inline;
+}
+
+.minor_temperature {
+    display: inline;
+    font-size: 2vmax;
 }
 
 .status {
     position: absolute;
     display: inline;
-    color: aliceblue;
-    font-family: monospace;
-    font-size: 20pt;
-    z-index: 3;
-    bottom: 10%;
+    color: var(--font-color);
+    font-size: 1.5vmax;
+    top: 75%;
     left: 5%;
     background: transparent;
-    -webkit-text-stroke: 2pt rgba(0,0,0,.15);
 }
 
 .greeting {
     position: absolute;
-    display: inline;
-    color: aliceblue;
-    font-family: monospace;
-    font-size: 20pt;
-    z-index: 3;
+    z-index: 2;
     top: 10%;
     left: 5%;
     background: transparent;
-    -webkit-text-stroke: 2pt rgba(0,0,0,.15);
+}
+
+.greeting-hello {
+    color: #20212d;
+    font-size: 3vmax;
+    font-weight: bold;
+}
+
+.greeting-location {
+    color: #20212d;
+    font-size: 1.5vmax;
+}
+
+.date {
+    position: absolute;
+    top: 80%;
+    right: 5%;
+    background: transparent;
+}
+
+.day {
+    color: var(--font-color);
+    font-size: 2vmax;
+    text-align: right;
+}
+
+.time {
+    color: var(--font-color);
+    font-size: 1.5vmax;
+    text-align: right;
+}
+
+.advice {
+    position: absolute;
+    z-index: 2;
+    top: 67%;
+    right: 5%;
+    display: inline;
+    width: max-content;
+    height: max-content;
+    background-color: rgba(255, 181, 17, 0.85);
+    color: var(--font-color);
+    font-size: 1.5vmax;
+    border-radius: 5pt;
+    box-shadow: 0 0 15pt rgba(255, 181, 17, 0.75);
+    padding: 7pt;
+    margin-top: 15pt;
+    margin-left: 15pt;
 }

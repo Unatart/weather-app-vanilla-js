@@ -1,0 +1,20 @@
+.stats {
+    grid-area: stats;
+    padding-left: 15pt;
+    text-align: justify-all;
+    text-justify: newspaper;
+}
+
+.stats-values {
+    padding-left: 5pt;
+    display: inline;
+    color: var(--font-color);
+    font-size: 2vmax;
+}
+
+.stats-names {
+    display: inline;
+    color: var(--font-color);
+    font-size: 1vmax;
+    padding-left: 3vw;
+}
