@@ -17,12 +17,12 @@
     height: 100vh;
     background-color: var(--background-color);
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr 0.3fr 1fr;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-rows: 3fr 0.3fr 0.7fr;
     grid-template-areas:
-    "content"
-    "stats"
-    "table";
+    "content content content"
+    ". stats ."
+    ". table .";
 }
 
 

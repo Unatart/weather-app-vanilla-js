@@ -1,0 +1,29 @@
+
+
+.table {
+    grid-area: table;
+    padding-top: 3vw;
+    padding-bottom: 2vw;
+    color: var(--font-color);
+    font-size: 1.5vmax;
+    font-family: 'Montserrat', monospace;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 0.5vw 0;
+}
+
+.table td {
+    border-right: 1pt solid rgba(38, 42, 54, 0.4);
+}
+
+.table td:last-child {
+    border: none;
+}
+
+.table th {
+    border-right: 1pt solid rgba(38, 42, 54, 0.4);
+}
+
+.table th:last-child {
+    border: none;
+}
