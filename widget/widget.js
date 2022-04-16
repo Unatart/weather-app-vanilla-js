@@ -21,6 +21,18 @@ async function loadWeatherData() {
     return weather_map;
 }
 
+async function loadStatsAndAdvices() {
+    const advices = await fetch("../requests_data_mocks/weather_advices.json").then((data) => data.json()).then((data) => data.result);
+
+    // order guaranteed
+    const advice_map = {};
+    for (let i = 0; i < advices.length; i++) {
+        advice_map[advices[i].status] = advices[i].advice;
+    }
+
+    return advice_map;
+}
+
 function createMain() {
     const widget = document.createElement("div");
     widget.className = "main";
@@ -73,9 +85,48 @@ function createStatus(status_string) {
 function createGreeting() {
     const greeting = document.createElement("div");
     greeting.className = "greeting";
-    greeting.innerText = "Current weather";
+
+    const hello = document.createElement("div");
+    hello.className = "greeting-hello";
+    hello.innerText = "Hello, Natalie";
+
+    const location = document.createElement("div");
+    location.className = "greeting-location";
+    location.innerText = "this is current weather at your location";
+
+    greeting.appendChild(hello);
+    greeting.appendChild(location);
 
     return greeting;
+}
+
+function createDate() {
+    const date = document.createElement("div");
+    date.className = "date";
+
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const today  = new Date();
+
+    const day = document.createElement("div");
+    day.className = "day";
+    day.innerText = today.toLocaleDateString("en-US", options);
+
+    const time = document.createElement("div");
+    time.className = "time";
+    time.innerText = today.toLocaleTimeString("en-US");
+
+    date.appendChild(day);
+    date.appendChild(time);
+
+    return date;
+}
+
+function createAdvice(advice) {
+    const value = document.createElement("div");
+    value.className = "advice";
+    value.innerText = advice;
+
+    return value;
 }
 
 export async function createWeatherWidget(root, current_weather_type) {
@@ -87,11 +138,17 @@ export async function createWeatherWidget(root, current_weather_type) {
     const status = createStatus(WEATHER_RECORD[current_weather_type]);
     const background = createBackground(current_weather.url);
     const greeting = createGreeting();
+    const date = createDate();
+
+    const advice_map = await loadStatsAndAdvices();
+    const advice = await createAdvice(advice_map[WEATHER_RECORD[current_weather_type]]);
+    widget.appendChild(advice);
 
     widget.appendChild(background);
     widget.appendChild(temperature);
     widget.appendChild(status);
     widget.appendChild(greeting);
+    widget.appendChild(date);
 
     root.appendChild(widget);
 }

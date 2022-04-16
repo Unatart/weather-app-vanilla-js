@@ -8,8 +8,8 @@
     --main-z-index: 5;
     --widget-z-index: 2;
     --widget-text-z-index: 3;
-    --background-color: #060115;
-    --light-font-color: rgb(240, 248, 255);
+    --background-color: #ffffff;
+    --font-color: #262a36;
 }
 
 .app {
@@ -17,30 +17,12 @@
     height: 100vh;
     background-color: var(--background-color);
     display: grid;
-    grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
-    grid-template-rows: 0.1fr repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 0.3fr 1fr;
     grid-template-areas:
-    "head head profile profile"
-    ". content stats ."
-    ". table table ."
-    ". animation animation .";
-}
-
-@media (max-width: 1000px) {
-    .app {
-        width: 100vw;
-        height: 100vh;
-        background-color: var(--background-color);
-        display: grid;
-        grid-template-columns: 0.1fr repeat(2, 1fr) 0.1fr;
-        grid-template-rows: 0.1fr repeat(4, 1fr);
-        grid-template-areas:
-            "head head profile profile"
-            ". content content ."
-            ". stats stats ."
-            ". table table ."
-            ". animation animation .";
-    }
+    "content"
+    "stats"
+    "table";
 }
 
 

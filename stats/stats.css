@@ -6,25 +6,15 @@
 }
 
 .stats-values {
-    padding-left: 10pt;
+    padding-left: 5pt;
     display: inline;
-    color: var(--light-font-color);
+    color: var(--font-color);
     font-size: 2vmax;
 }
 
 .stats-names {
     display: inline;
-    color: rgba(240, 248, 255, 0.65);
-    font-size: 0.9vmax;
-}
-
-.stats-advice {
-    display: inline-block;
-    background: linear-gradient(180deg, #A869F0 0%, #834CC2 100%);
-    color: var(--light-font-color);
-    font-size: 1.5vmax;
-    border-radius: 5pt;
-    box-shadow: 0 0 15pt #A869F0;
-    padding: 7pt;
-    margin-top: 15pt;
+    color: var(--font-color);
+    font-size: 1vmax;
+    padding-left: 3vw;
 }

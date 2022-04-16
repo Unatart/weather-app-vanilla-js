@@ -1,10 +1,7 @@
 import {WEATHER_RECORD} from "../main/helpers.js";
 
 async function loadStatsAndAdvices() {
-    const [stats, advices] = await Promise.all([
-        fetch("../requests_data_mocks/weather_stats.json").then((data) => data.json()).then((data) => data.result),
-        fetch("../requests_data_mocks/weather_advices.json").then((data) => data.json()).then((data) => data.result),
-    ]);
+    const stats = await fetch("../requests_data_mocks/weather_stats.json").then((data) => data.json()).then((data) => data.result);
 
     // order guaranteed
     const weather_map = {};
@@ -12,13 +9,12 @@ async function loadStatsAndAdvices() {
         weather_map[stats[i].status] = {
             "wind": stats[i].wind,
             "wind direction": stats[i].wind_direction,
-            "sunset": stats[i].sunset,
             "dawn": stats[i].dawn,
+            "sunset": stats[i].sunset,
             "rain probability": stats[i].rain_probability,
             "snow probability": stats[i].snow_probability,
             "rain time": stats[i].rain_time,
             "tomorrow": stats[i].tomorrow,
-            "advice": advices[i].advice,
         }
     }
 
@@ -32,16 +28,8 @@ function createStatsPart(weather_stats) {
 
     for (let key in weather_stats) {
         const weather_stat = weather_stats[key];
-        const new_line_div = document.createElement("div");
 
         if (key === "advice") {
-            const value = document.createElement("div");
-            value.className = "stats-advice";
-            value.innerText = weather_stat;
-
-            new_line_div.appendChild(value);
-            stats.appendChild(new_line_div);
-
             continue;
         }
 
@@ -57,10 +45,8 @@ function createStatsPart(weather_stats) {
         value.className = "stats-values";
         value.innerText = weather_stat;
 
-        new_line_div.appendChild(name);
-        new_line_div.appendChild(value);
-
-        stats.appendChild(new_line_div);
+        stats.appendChild(name);
+        stats.appendChild(value);
     }
 
     return stats;
