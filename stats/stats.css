@@ -1,7 +1,7 @@
 .stats {
     grid-area: stats;
     padding-left: 15pt;
-    text-align: justify-all;
+    text-align: center;
     text-justify: newspaper;
 }
 
@@ -9,12 +9,12 @@
     padding-left: 5pt;
     display: inline;
     color: var(--font-color);
-    font-size: 2vmax;
+    font-size: 1.8vmax;
 }
 
 .stats-names {
     display: inline;
     color: var(--font-color);
     font-size: 1vmax;
-    padding-left: 3vw;
+    padding-left: 1vw;
 }
