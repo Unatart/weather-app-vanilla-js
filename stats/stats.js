@@ -11,11 +11,11 @@ async function loadStatsAndAdvices() {
     for (let i = 0; i < stats.length; i++) {
         weather_map[stats[i].status] = {
             "wind": stats[i].wind,
-            "direction": stats[i].direction,
+            "wind direction": stats[i].wind_direction,
             "sunset": stats[i].sunset,
             "dawn": stats[i].dawn,
-            "fallout_probability": stats[i].fallout_probability,
-            "fallout_time": stats[i].fallout_time,
+            "fallout probability": stats[i].fallout_probability,
+            "fallout time": stats[i].fallout_time,
             "tomorrow": stats[i].tomorrow,
             "advice": advices[i].advice,
         }
@@ -24,20 +24,43 @@ async function loadStatsAndAdvices() {
     return weather_map;
 }
 
-// TODO: style it properly!
-function createStatsPart(weather_stats) {
-    console.log(weather_stats);
-    const stats = document.createElement("div")
-    stats.className = "stats";
-    stats.innerText = `
-            wind: ${weather_stats.wind}m/s | direction: ${weather_stats.direction} 
-            sunset: ${weather_stats.sunset} | dawn: ${weather_stats.dawn}
-            fallout_probability: ${weather_stats.fallout_probability}
-            
-            tomorrow: ${weather_stats.tomorrow}
-    `;
 
-    const advice = weather_stats.advice;
+function createStatsPart(weather_stats) {
+    const stats = document.createElement("div");
+    stats.className = "stats";
+
+    for (let key in weather_stats) {
+        const weather_stat = weather_stats[key];
+        const new_line_div = document.createElement("div");
+
+        if (key === "advice") {
+            const value = document.createElement("div");
+            value.className = "stats-advice";
+            value.innerText = weather_stat;
+
+            new_line_div.appendChild(value);
+            stats.appendChild(new_line_div);
+
+            continue;
+        }
+
+        if (weather_stat === undefined) {
+            continue;
+        }
+
+        const name = document.createElement("div");
+        name.className = "stats-names";
+        name.innerText = key;
+
+        const value = document.createElement("div");
+        value.className = "stats-values";
+        value.innerText = weather_stat;
+
+        new_line_div.appendChild(name);
+        new_line_div.appendChild(value);
+
+        stats.appendChild(new_line_div);
+    }
 
     return stats;
 }

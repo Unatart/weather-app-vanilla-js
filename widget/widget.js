@@ -30,8 +30,16 @@ function createMain() {
 
 function createBackground(url) {
     const background = document.createElement("div");
-    background.className = "image";
-    background.style.backgroundImage = `url(${url})`;
+
+    const image = document.createElement("div");
+    image.className = "image";
+    image.style.backgroundImage = `url(${url})`;
+
+    const overlay = document.createElement("div");
+    overlay.className = "overlay";
+
+    background.appendChild(image);
+    background.appendChild(overlay);
 
     return background;
 }

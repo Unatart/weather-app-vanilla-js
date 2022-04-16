@@ -1,9 +1,30 @@
 .stats {
     grid-area: stats;
-    color: var(--light-font-color);
-    font-family: monospace;
     padding-left: 15pt;
-    font-size: 20pt;
     text-align: justify-all;
     text-justify: newspaper;
+}
+
+.stats-values {
+    padding-left: 10pt;
+    display: inline;
+    color: var(--light-font-color);
+    font-size: 20pt;
+}
+
+.stats-names {
+    display: inline;
+    color: rgba(240, 248, 255, 0.65);
+    font-size: 12pt;
+}
+
+.stats-advice {
+    display: inline-block;
+    background: linear-gradient(180deg, #A869F0 0%, #834CC2 100%);
+    color: var(--light-font-color);
+    font-size: 20pt;
+    border-radius: 5pt;
+    box-shadow: 0 0 15pt #A869F0;
+    padding: 7pt;
+    margin-top: 15pt;
 }

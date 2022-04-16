@@ -1,10 +1,11 @@
 export const WEATHER_RECORD = {
     0: "sunny",
     1: "dull",
-    2: "rain",
+    2: "rainy",
     3: "storm",
     4: "cloudy",
-    5: "fair"
+    5: "fair",
+    6: "snow",
 };
 
 export function getRandomInt(min, max) {

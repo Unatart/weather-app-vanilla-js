@@ -8,16 +8,25 @@
 
 .image {
     background-size: cover;
-    filter: blur(2pt);
-    -webkit-filter: blur(2pt);
-    overflow: hidden;
+    border-radius: 10pt;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(131, 76, 194, 0.2);
+    border-radius: 10pt;
+    width: 100%;
+    height: 100%;
 }
 
 .temperature {
     position: absolute;
     display: inline;
     color: var(--light-font-color);
-    font-family: monospace;
     font-size: 60pt;
     z-index: var(--widget-text-z-index);
     top: 60%;
@@ -31,7 +40,6 @@
     position: absolute;
     display: inline;
     color: var(--light-font-color);
-    font-family: monospace;
     font-size: 20pt;
     z-index: var(--widget-text-z-index);
     bottom: 10%;
@@ -44,7 +52,6 @@
     position: absolute;
     display: inline;
     color: var(--light-font-color);
-    font-family: monospace;
     font-size: 20pt;
     z-index: var(--widget-z-index);
     top: 10%;

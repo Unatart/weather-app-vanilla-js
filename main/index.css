@@ -1,14 +1,15 @@
 *, html {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', monospace;
 }
 
 :root {
     --main-z-index: 5;
     --widget-z-index: 2;
     --widget-text-z-index: 3;
-    --background-color: #0a1426;
-    --light-font-color: aliceblue;
+    --background-color: #060115;
+    --light-font-color: rgb(240, 248, 255);
 }
 
 .app {

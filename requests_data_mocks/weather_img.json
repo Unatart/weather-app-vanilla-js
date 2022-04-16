@@ -2,31 +2,31 @@
   "result": [
     {
       "status": "sunny",
-      "url": "https://www.weather2travel.com/images_content/sunshine-hours-where-and-when-is-it-sunniest.jpg"
+      "url": "https://images.unsplash.com/photo-1572966101025-e199cab72196?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
     },
     {
       "status": "dull",
-      "url": "http://www.nasa.gov/sites/default/files/thumbnails/image/smap-weather.jpg"
+      "url": "https://images.unsplash.com/photo-1595618530001-349146239aef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
     },
     {
       "status": "rainy",
-      "url": "https://s7d2.scene7.com/is/image/TWCNews/heavy_rain_jpg-11"
+      "url": "https://images.unsplash.com/photo-1433863448220-78aaa064ff47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80"
     },
     {
       "status": "storm",
-      "url": "https://i.ytimg.com/vi/qzEn8JkYCZs/maxresdefault.jpg"
+      "url": "https://images.unsplash.com/photo-1493243350443-9e3048ce7288?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1640&q=80"
     },
     {
       "status": "cloudy",
-      "url": "https://media.istockphoto.com/photos/thunderstorm-with-sunrays-shining-through-altocumulus-asperitas-over-picture-id1152985678?k=20&m=1152985678&s=612x612&w=0&h=YhY8ILC67qkNHhwQQN9tpHgiWldaMZ_1ovyMwoE57jU="
+      "url": "https://images.unsplash.com/photo-1469395905200-87dd3bce7080?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
     },
     {
       "status": "fair",
-      "url": "https://uploads.ceylontoday.lk/images/2020/08/cLG76RjpysJvfC71v9aFCQtpUWn4ouFO.jpg"
+      "url": "https://images.unsplash.com/photo-1529126894674-8dd7cb884766?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
     },
     {
       "status": "snow",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Ymir_Mountain.jpg"
+      "url": "https://images.unsplash.com/photo-1418985991508-e47386d96a71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
     }
   ]
 }
