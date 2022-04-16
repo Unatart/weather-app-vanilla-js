@@ -26,5 +26,22 @@
     ". animation animation .";
 }
 
+@media (max-width: 1000px) {
+    .app {
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--background-color);
+        display: grid;
+        grid-template-columns: 0.1fr repeat(2, 1fr) 0.1fr;
+        grid-template-rows: 0.1fr repeat(4, 1fr);
+        grid-template-areas:
+            "head head profile profile"
+            ". content content ."
+            ". stats stats ."
+            ". table table ."
+            ". animation animation .";
+    }
+}
+
 
 
