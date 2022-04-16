@@ -45,11 +45,21 @@ function createBackground(url) {
 }
 
 function createTemperature(celsius, fahrenheit) {
-    const temperature = document.createElement("div");
-    temperature.className = "temperature";
-    temperature.innerText = `${celsius}°C/${fahrenheit}°F` // TODO: I want Fahrenheit temperature to be more small
+    const div = document.createElement("div");
+    div.className = "temperature"
 
-    return temperature;
+    const temperature = document.createElement("div");
+    temperature.className = "main_temperature";
+    temperature.innerText = `${celsius}°C/`
+
+    const minor_temperature = document.createElement("div");
+    minor_temperature.className = "minor_temperature";
+    minor_temperature.innerText = `${fahrenheit}°F`;
+
+    div.appendChild(temperature);
+    div.appendChild(minor_temperature);
+
+    return div;
 }
 
 function createStatus(status_string) {

@@ -14,8 +14,9 @@ async function loadStatsAndAdvices() {
             "wind direction": stats[i].wind_direction,
             "sunset": stats[i].sunset,
             "dawn": stats[i].dawn,
-            "fallout probability": stats[i].fallout_probability,
-            "fallout time": stats[i].fallout_time,
+            "rain probability": stats[i].rain_probability,
+            "snow probability": stats[i].snow_probability,
+            "rain time": stats[i].rain_time,
             "tomorrow": stats[i].tomorrow,
             "advice": advices[i].advice,
         }

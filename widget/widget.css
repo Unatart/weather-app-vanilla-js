@@ -25,7 +25,6 @@
 
 .temperature {
     position: absolute;
-    display: inline;
     color: var(--light-font-color);
     font-size: 60pt;
     z-index: var(--widget-text-z-index);
@@ -34,6 +33,15 @@
     margin: -35px 0 0 -35px;
     background: transparent;
     -webkit-text-stroke: 2pt rgba(0,0,0,.15);
+}
+
+.main_temperature {
+    display: inline;
+}
+
+.minor_temperature {
+    display: inline;
+    font-size: 25pt;
 }
 
 .status {
