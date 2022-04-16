@@ -26,11 +26,10 @@
 .temperature {
     position: absolute;
     color: var(--light-font-color);
-    font-size: 60pt;
+    font-size: 4vmax;
     z-index: var(--widget-text-z-index);
     top: 60%;
-    left: 10%;
-    margin: -35px 0 0 -35px;
+    left: 5%;
     background: transparent;
     -webkit-text-stroke: 2pt rgba(0,0,0,.15);
 }
@@ -41,14 +40,14 @@
 
 .minor_temperature {
     display: inline;
-    font-size: 25pt;
+    font-size: 2vmax;
 }
 
 .status {
     position: absolute;
     display: inline;
     color: var(--light-font-color);
-    font-size: 20pt;
+    font-size: 1.5vmax;
     z-index: var(--widget-text-z-index);
     bottom: 10%;
     left: 5%;
@@ -60,7 +59,7 @@
     position: absolute;
     display: inline;
     color: var(--light-font-color);
-    font-size: 20pt;
+    font-size: 2vmax;
     z-index: var(--widget-z-index);
     top: 10%;
     left: 5%;

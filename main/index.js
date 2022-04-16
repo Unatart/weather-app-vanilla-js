@@ -12,7 +12,6 @@ function index() {
     createWeatherWidget(root, current_weather_type);
     createStats(root, current_weather_type);
     // createWeekWeatherTable(root);
-    // createFooter(root);
 }
 
 index();

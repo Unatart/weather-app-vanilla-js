@@ -17,14 +17,13 @@
     height: 100vh;
     background-color: var(--background-color);
     display: grid;
-    grid-template-columns: 50pt 1fr 1fr 50pt;
-    grid-template-rows: 100pt repeat(2, 1fr) 200pt;
+    grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+    grid-template-rows: 0.1fr repeat(3, 1fr);
     grid-template-areas:
-    "header header profile profile"
+    "head head profile profile"
     ". content stats ."
     ". table table ."
-    ". animation animation ."
-    "footer footer footer footer";
+    ". animation animation .";
 }
 
 

@@ -48,7 +48,7 @@
     },
     {
       "status": "fair",
-      "wind": 0.2,
+      "wind": "0.2 m/s",
       "wind_direction": "west",
       "sunset": "11 p.m.",
       "dawn": "5 a.m.",

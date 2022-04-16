@@ -18,6 +18,4 @@ export function createHeader(root) {
 
     root.appendChild(header);
     root.appendChild(profile);
-
-    return header;
 }
