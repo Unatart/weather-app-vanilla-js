@@ -8,3 +8,10 @@ vanilla js project for revising some knowledge of js and css
 ## dashboard example ↓
 
 ![alt text](readme_src/readme_example.png)
+
+
+TODOS:
+ - animated background
+ - weather by hour chart
+ - location map
+ - load data from API (add backend part)
